@@ -1,22 +1,10 @@
 import React from "react";
 import image from "../../assets/placeholder.webp";
+import { Link, useParams } from "react-router-dom";
 
-const ProductsData = [
-  {
-    productName: "Garden Pods",
-    productImage: image,
-  },
-  {
-    productName: "Garden Pods",
-    productImage: image,
-  },
-  {
-    productName: "Garden Pods",
-    productImage: image,
-  },
-];
+import { ProductCategories } from "../../data/ProductData";
 
-export const Products = () => {
+export const Products = ({ products = ProductCategories }) => {
   return (
     <section className="container mx-auto  my-16">
       <header className="my-8">
@@ -25,27 +13,37 @@ export const Products = () => {
         </h1>
       </header>
 
-      <div className="flex flex-row gap-4 my-8">
-        {ProductsData.map((productData, index) => {
+      <div className="flex flex-row gap-4 my-8 m-h-[700px]">
+        {products.map((productData, index) => {
           return (
             <div
               key={index}
-              className=" relative basis-1/3 transition-all ease-in duration-300 hover:basis-2/3 min-h-[700px]"
+              className=" relative basis-1/3 transition-all ease-in duration-300 hover:basis-2/3 h-[700px]"
             >
               <img
-                src={productData.productImage}
+                src={productData.image}
                 alt="background"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-xl"
               />
 
               {/* Gradient Overlay */}
               <div
-                className={`absolute inset-0 bg-gradient-to-t to-[rgba(0,0,0,0.4)] from-[rgba(0,0,0,0.9)] p-8`}
+                className={`absolute inset-0 bg-gradient-to-t to-[rgba(0,0,0,0.4)] from-[rgba(0,0,0,0.9)] p-8  rounded-xl`}
               >
                 <article>
-                  <h1 className="text-background text-5xl">
-                    {productData.productName}
+                  <h1 className="text-background text-5xl capitalize">
+                    {productData.name} Units
                   </h1>
+
+                  <Link
+                    to={
+                      productData.to === null
+                        ? `/product/${productData.id}`
+                        : productData.to
+                    }
+                  >
+                    {productData.button}
+                  </Link>
                 </article>
               </div>
             </div>

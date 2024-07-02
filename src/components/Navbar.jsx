@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, ScrollRestoration } from "react-router-dom";
 import Logo from "../assets/Logo.svg";
 
 const Links = [
@@ -20,6 +20,7 @@ const Links = [
 export const Navbar = () => {
   return (
     <>
+      <ScrollRestoration />
       <div className="border-b-2 border-secondary">
         <nav className="nav-bar container mx-auto flex min-h-[180px] items-center text-primary">
           <div className="basis-1/2 flex-grow flex justify-start items-center text-xl gap-8">

@@ -10,7 +10,12 @@ import { AboutUsContent, WhyUsContent } from "../data/AboutUsData";
 export const Homepage = () => {
   return (
     <>
-      <HeroSection />
+      <HeroSection
+        mainTitle="Welcome To"
+        subTitle1="Cube Nest"
+        subTitle2="Modular"
+        subTitle3="Living Units"
+      />
       <ImageCarousel />
       <SplitSection content={AboutUsContent} />
 
