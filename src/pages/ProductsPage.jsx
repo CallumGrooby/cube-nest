@@ -6,6 +6,59 @@ import { useParams } from "react-router-dom";
 import ProductData, { ProductData as products } from "../data/ProductData";
 import { Products } from "../components/products/Products";
 import { QualitySection } from "../components/products/QualitySection";
+import ClickableSections from "../components/products/ClickableSections";
+
+import Exterior from "../assets/QualitySection/Exterior.jpg";
+import Heating from "../assets/QualitySection/Heating.jpg";
+import Interior from "../assets/QualitySection/Interior.jpg";
+import Structure from "../assets/QualitySection/Structure.jpg";
+import Thermal from "../assets/QualitySection/Thermal.jpg";
+import Windows from "../assets/QualitySection/Windows.jpg";
+
+const Data = [
+  {
+    name: "Structure",
+    description:
+      "Our pods are constructed with a robust framework that guarantees stability and durability. Utilizing precision engineering and high-quality materials, each pod is built to withstand the test of time, providing a solid foundation for your garden office or business premises.",
+    image: Structure,
+    imageAlt: "",
+  },
+  {
+    name: "Thermal & acoustics",
+    description:
+      "Experience unparalleled comfort with our advanced thermal and acoustic insulation. Our pods are designed to maintain optimal temperature and soundproofing, ensuring a peaceful and efficient environment regardless of external conditions.",
+    image: Thermal,
+    imageAlt: "",
+  },
+  {
+    name: "Exterior finishes",
+    description:
+      "Choose from a variety of premium exterior finishes that blend seamlessly with your surroundings. From sleek, modern cladding to natural wood options, our finishes are not only aesthetically pleasing but also weather-resistant and low-maintenance.",
+    image: Exterior,
+    imageAlt: "",
+  },
+  {
+    name: "Windows & Doors",
+    description:
+      "Enhance your pod's natural light and accessibility with our high-quality windows and doors. Crafted for energy efficiency and security, our stylish designs provide a perfect balance of form and function, elevating the overall look and feel of your space.",
+    image: Windows,
+    imageAlt: "",
+  },
+  {
+    name: "Heating, cooling & lighting",
+    description:
+      "Stay comfortable all year round with our state-of-the-art heating, cooling, and lighting solutions. Our energy-efficient systems ensure a pleasant indoor climate and optimal illumination, tailored to meet your specific needs and preferences.",
+    image: Heating,
+    imageAlt: "",
+  },
+  {
+    name: "Interior finishes",
+    description:
+      "The interior finishes of our pods are a testament to our commitment to quality and style. With a range of customizable options, from sleek modern designs to warm, inviting textures, each pod is designed to reflect your unique taste while providing a functional and beautiful space.",
+    image: Interior,
+    imageAlt: "",
+  },
+];
 
 export const ProductsPage = () => {
   const { productsType } = useParams();
@@ -27,7 +80,11 @@ export const ProductsPage = () => {
       <Products products={result} />
       <ContactSection />
 
-      <QualitySection />
+      <ClickableSections
+        variant={"default"}
+        title={"Quality Built In"}
+        data={Data}
+      />
     </>
   );
 };
