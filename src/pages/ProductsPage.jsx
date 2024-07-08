@@ -5,8 +5,7 @@ import { useParams } from "react-router-dom";
 
 import ProductData, { ProductData as products } from "../data/ProductData";
 import { Products } from "../components/products/Products";
-import { QualitySection } from "../components/products/QualitySection";
-import ClickableSections from "../components/products/ClickableSections";
+import ClickableSections from "../components/ClickableSections";
 
 import Exterior from "../assets/QualitySection/Exterior.jpg";
 import Heating from "../assets/QualitySection/Heating.jpg";
@@ -14,6 +13,11 @@ import Interior from "../assets/QualitySection/Interior.jpg";
 import Structure from "../assets/QualitySection/Structure.jpg";
 import Thermal from "../assets/QualitySection/Thermal.jpg";
 import Windows from "../assets/QualitySection/Windows.jpg";
+import Button from "../components/Button";
+
+import gardenUnit from "../assets/Lite Pod/Image1.webp";
+import livingUnit from "../assets/QualitySection/Structure.jpg";
+import commericalUnit from "../assets/Commerical.webp";
 
 const Data = [
   {
@@ -60,6 +64,27 @@ const Data = [
   },
 ];
 
+const carouselContent = [
+  {
+    image: gardenUnit,
+    title: "Garden Units",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
+    button: "test",
+  },
+  {
+    image: livingUnit,
+    title: "Living Units",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
+    button: "test",
+  },
+  {
+    image: commericalUnit,
+    title: "Commerical Units",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
+    button: "test",
+  },
+];
+
 export const ProductsPage = () => {
   const { productsType } = useParams();
   console.log(productsType);
@@ -76,7 +101,7 @@ export const ProductsPage = () => {
         subTitle3={"GARDEN UNITS"}
       />
 
-      <ImageCarousel />
+      <ImageCarousel contentData={carouselContent} />
       <Products products={result} />
       <ContactSection />
 
@@ -98,7 +123,15 @@ const ContactSection = () => {
           Creating a better work life balance is simpler than you think. From
           foundation to completed building in a matter of days.
         </p>
-        <button className="mt-16">Get In Touch</button>
+
+        <Button
+          className="mt-16"
+          variant={"subtle"}
+          size={"lg"}
+          href={"/contact"}
+        >
+          Get In Touch
+        </Button>
       </section>
     </div>
   );

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
-import { ImageCarousel } from "./components/ImageCarousel";
 import { SplitSection } from "./components/SplitSection";
 import { Products } from "./components/products/Products";
 

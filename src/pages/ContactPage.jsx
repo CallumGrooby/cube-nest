@@ -1,5 +1,6 @@
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import React from "react";
+import Button from "../components/Button";
 
 export const ContactPage = () => {
   return (
@@ -52,9 +53,7 @@ const ContactForm = () => {
           isTextArea={true}
         />
 
-        <button type="submit" className="">
-          Get In Touch
-        </button>
+        <Button type="submit">Get In Touch</Button>
       </form>
     </section>
   );

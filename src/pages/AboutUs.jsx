@@ -7,7 +7,7 @@ import ricsLogo from "../assets/CompanyLogos/About Us Logos/rics.png";
 import safeContractorLogo from "../assets/CompanyLogos/About Us Logos/safecontractor.png";
 
 import ContentSection from "../components/ContentSection";
-import ClickableSections from "../components/products/ClickableSections";
+import ClickableSections from "../components/ClickableSections";
 
 import Exterior from "../assets/QualitySection/Exterior.jpg";
 import Heating from "../assets/QualitySection/Heating.jpg";
@@ -85,7 +85,7 @@ export const AboutUs = () => {
       <ContentSection data={ProductData} />
       <ClickableSections
         variant={"imageAsBackground"}
-        title={"Hello World"}
+        title={""}
         data={TestData}
       />
     </section>

@@ -3,6 +3,7 @@ import image from "../../assets/placeholder.webp";
 import { Link, useParams } from "react-router-dom";
 
 import { ProductCategories } from "../../data/ProductData";
+import Button from "../Button";
 
 export const Products = ({ products = ProductCategories }) => {
   return (
@@ -18,7 +19,7 @@ export const Products = ({ products = ProductCategories }) => {
           return (
             <div
               key={index}
-              className=" relative basis-1/3 transition-all ease-in duration-300 hover:basis-2/3 h-[700px]"
+              className="relative basis-1/3 transition-all ease-in duration-300 hover:basis-2/3 h-[700px]"
             >
               <img
                 src={productData.image}
@@ -30,20 +31,21 @@ export const Products = ({ products = ProductCategories }) => {
               <div
                 className={`absolute inset-0 bg-gradient-to-t to-[rgba(0,0,0,0.4)] from-[rgba(0,0,0,0.9)] p-8  rounded-xl`}
               >
-                <article>
+                <article className="h-full flex flex-col items-start">
                   <h1 className="text-background text-5xl capitalize">
-                    {productData.name} Units
+                    {productData.name}
                   </h1>
 
-                  <Link
-                    to={
+                  <Button
+                    className="mt-auto"
+                    href={
                       productData.to === null
                         ? `/product/${productData.id}`
                         : productData.to
                     }
                   >
                     {productData.button}
-                  </Link>
+                  </Button>
                 </article>
               </div>
             </div>
@@ -53,3 +55,5 @@ export const Products = ({ products = ProductCategories }) => {
     </section>
   );
 };
+
+const ProductElement = () => {};

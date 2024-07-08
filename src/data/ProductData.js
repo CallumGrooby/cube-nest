@@ -34,21 +34,21 @@ const ProductTypes = {
 export const ProductCategories = [
   {
     name: ProductTypes.GARDEN,
-    image: image,
+    image: litePodImage1,
     description: "",
     button: "View Products",
     to: `/products/${ProductTypes.GARDEN}`,
   },
   {
     name: ProductTypes.LIVING,
-    image: image,
+    image: fejjiLivingImage2,
     description: "",
     button: "View Products",
     to: `/products/${ProductTypes.LIVING}`,
   },
   {
     name: ProductTypes.COMMERCIAL,
-    image: image,
+    image: neoPoddImage2,
     description: "",
     button: "View Products",
     to: `/products/${ProductTypes.COMMERCIAL}`,

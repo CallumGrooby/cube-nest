@@ -1,6 +1,7 @@
 import React, { forwardRef, useState } from "react";
 import { cva } from "class-variance-authority";
-import { cn } from "../../ultilies/MergeCSS";
+import { cn } from "../ultilies/MergeCSS";
+import Button from "./Button";
 
 const SectionVariants = cva(
   "relative flex gap-8 flex-col md:flex-row lg:invisible; lg:absolute h-[580px] w-full",
@@ -87,7 +88,7 @@ const ClickableSections = forwardRef(
             {title}
           </h1>
         </header>
-        <div className="relative flex flex-col gap-16 h-full min-h-[620px]">
+        <div className="relative flex flex-col gap-16 h-full min-h-[620px] my-8">
           {renderComponent()}
           <SectionButtons
             buttonData={data}
@@ -106,16 +107,16 @@ const SectionButtons = ({ buttonData, handleClick, currentSection }) => {
       {buttonData.map((data, index) => {
         const isSelected = currentSection === data.name;
         return (
-          <div key={index} onClick={() => handleClick(data)}>
-            <h1
-              className={`
-                font-semibold text-primary hover:text-secondary 
-                transition-all duration-300 hover-underline-animation
-                ${isSelected ? "text-secondary selected-underline" : ""}`}
-            >
-              {data.name}
-            </h1>
-          </div>
+          <Button
+            key={index}
+            variant={"underline"}
+            onClick={() => handleClick(data)}
+            className={` ${
+              isSelected ? "text-secondary selected-underline" : ""
+            }`}
+          >
+            {data.name}
+          </Button>
         );
       })}
     </div>
