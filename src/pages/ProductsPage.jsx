@@ -68,23 +68,20 @@ const carouselContent = [
   {
     image: gardenUnit,
     title: "Garden Units",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
-    button: "View Products",
-    to: "/products/garden",
+    text: "Garden Pods are versatile outdoor spaces designed to enhance your garden, offering functionality as a home office, studio, retreat, or entertainment area while blending seamlessly with natural surroundings.",
+    button: "Find Out More",
   },
   {
     image: livingUnit,
     title: "Living Units",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
-    button: "View Products",
-    to: "/products/living",
+    text: "Living Pods provide sustainable and efficient living solutions, ideal for eco-conscious individuals seeking compact yet comfortable residential spaces with minimal environmental impact.",
+    button: "Find Out More",
   },
   {
     image: commericalUnit,
     title: "Commerical Units",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
-    button: "View Products",
-    to: "/products/commerical",
+    text: "Commercial Pods are modular buildings tailored for business needs, offering flexible and customizable spaces such as offices, meeting rooms, marketing suites, or visitor centers, designed to optimize functionality and enhance professional environments.",
+    button: "Find Out More",
   },
 ];
 
@@ -129,7 +126,7 @@ const ContactSection = () => {
 
         <Button
           className="mt-16"
-          variant={"subtle"}
+          variant={"white"}
           size={"lg"}
           href={"/contact"}
         >

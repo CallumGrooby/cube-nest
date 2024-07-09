@@ -9,7 +9,7 @@ export const ContactPage = () => {
         <h1>Contact Us</h1>
       </header>
 
-      <div className="container mx-auto flex flex-col  lg:grid lg:grid-cols-2 lg:gap-4">
+      <div className="container mx-auto flex flex-col  lg:grid lg:grid-cols-2 lg:gap-4 gap-8">
         <ContactForm />
         <CompanyInformation />
       </div>

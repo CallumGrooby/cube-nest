@@ -19,12 +19,6 @@ const Links = [
   { name: "Contact Us", to: "/contact" },
 ];
 
-{
-  /* <div className="flex justify-center items-center">
-<img src={Logo} alt="" />
-</div> */
-}
-
 export const Navbar = () => {
   return (
     <>
@@ -42,7 +36,7 @@ export const Navbar = () => {
 
 const LargeScreenNavBar = () => {
   return (
-    <div className="sticky top-0 border-b-2 border-secondary z-50 bg-background">
+    <div className="sticky top-0 border-b-2 border-secondary z-50 bg-background hidden md:block">
       <nav className="bg flex lg:flex lg:flex-row gap-4 container mx-auto my-8 z-50 flex-col items-center">
         <Link to={"/"}>
           <img src={Logo} alt="" />
@@ -62,9 +56,40 @@ const LargeScreenNavBar = () => {
 };
 
 const SmallScreenNavBar = () => {
+  const [openNavLinks, setNavLinksOpenStatus] = useState(false);
+
   return (
-    <nav className="block lg:hidden">
-      {/* <NavigationLinks></NavigationLinks> */}
+    <nav className="block md:hidden sticky top-0 border-b-2 border-secondary z-50 bg-background">
+      <div className="flex flex-row justify-between p-8 items-center">
+        <Link to={"/"}>
+          <img src={Logo} alt="" />
+        </Link>
+
+        <svg
+          onClick={() => setNavLinksOpenStatus(!openNavLinks)}
+          className="stroke-primary hover:stroke-secondary cursor-pointer w-8 h-8"
+          xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 6l16 0" />
+          <path d="M4 12l16 0" />
+          <path d="M4 18l16 0" />
+        </svg>
+      </div>
+
+      <NavigationLinks
+        className={`
+          ${openNavLinks ? "flex" : "hidden"}
+          flex-col md:flex-row gap-4 flex-grow-1 w-full justify-center items-center`}
+      ></NavigationLinks>
     </nav>
   );
 };
@@ -134,7 +159,11 @@ const DropDownLink = ({ linkData }) => {
         <ul className="absolute z-[1000] float-left top-[60px] m-0 min-w-max list-none overflow-hidden rounded-lg shadow-lg">
           {linkData.subNav.map((link, index) => {
             return (
-              <li className="h-full pb-4 bg-background" key={index}>
+              <li
+                className="h-full pb-4 bg-background"
+                key={index}
+                onClick={toggleDropdown}
+              >
                 <Button
                   className="w-full max-w-[240px] bg-background"
                   variant={"underline"}

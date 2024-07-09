@@ -9,15 +9,18 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-secondary hover:bg-red-400 rounded-full text-background uppercase",
+          "bg-secondary hover:bg-red-400 rounded-full text-background uppercase text-sm lg:text-lg",
         underline:
           "hover:text-secondary transition-all duration-300 hover-underline-animation min-h-[42px] h-full",
-        round: "rounded-full bg-gray-400 flex justify-center items-center",
+        round:
+          "rounded-full bg-primary hover:bg-gray-900  flex justify-center items-center",
+        white:
+          "bg-background hover:bg-white text-primary rounded-full uppercase",
       },
       size: {
         default: "h-10 py-2 px-4",
         smRounded: "h-5 w-5",
-        lgRounded: " w-20 h-20",
+        lgRounded: " sm:w-20 sm:h-20 w-10 h-10",
         auto: "h-auto px-4",
         sm: "h-9 px-2",
         lg: "h-11 px-8",
