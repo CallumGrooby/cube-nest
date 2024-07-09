@@ -83,7 +83,7 @@ const InputField = ({ placeholder, type, name, title, isTextArea = false }) => {
   );
 };
 
-const CompanyInformation = () => {
+export const CompanyInformation = () => {
   return (
     <section className="justify-self-end max-w-[400px] w-full flex flex-col gap-2 text-primary">
       <h1 className="font-bold uppercase">Cube Nest Ltd.</h1>

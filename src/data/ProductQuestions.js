@@ -84,45 +84,56 @@ export const GardenPodQuestions = [
   },
 ];
 
-export const CommericalPodQuestions = [
+export const CommercialPodQuestions = [
   {
-    question: "What is a Garden Pod?",
+    question: "What are Commercial Units or Pods?",
     answer:
-      "A Garden Pod is a versatile outdoor space that can be used as a garden office, studio, retreat, or entertainment area. It is designed to blend seamlessly with your garden while providing a functional and stylish space.",
+      "Commercial Units or Pods are modular buildings designed for commercial use, such as offices, meeting rooms, marketing suites, sales offices, and visitor centers. They offer flexible, efficient, and customizable spaces tailored to business needs.",
   },
   {
-    question: "Do I need planning permission for a Garden Pod?",
+    question: "Do I need planning permission for Commercial Units?",
     answer:
-      "Planning permission is generally not required for our Garden Pods if they meet certain criteria. However, it is advisable to check with your local planning authority to ensure compliance with any regulations.",
+      "The need for planning permission varies based on local regulations and the intended use of the Commercial Unit. It is advisable to consult with your local planning authority to determine specific requirements for your project.",
   },
   {
-    question: "What sizes are available for Garden Pods?",
+    question: "What sizes are available for Commercial Units?",
     answer:
-      "Garden Pods are available in various sizes to suit different requirements. Available sizes include:\n- W 9.08m x D 4.39m x H 2.7m\n- W 10.08m x D 4.39m x H 2.7m\n- W 11.08m x D 4.39m x H 2.7m (*as shown)\n- W 12.08m x D 4.39m x H 2.7m\n- W 13.08m x D 4.39m x H 2.7m",
+      "Commercial Units come in various sizes to accommodate different business needs. Sizes can range from compact units suitable for small offices or meeting rooms to larger configurations for marketing suites or visitor centers.",
   },
   {
-    question: "Can I customize the interior of my Garden Pod?",
+    question: "Can I customize the interior of my Commercial Unit?",
     answer:
-      "Yes, our Garden Pods can be tailored to your specific needs. Whether you want a garden office, a studio, or an entertainment space, we offer various customization options for the interior layout and finishes.",
+      "Yes, the interior of Commercial Units can be customized to meet specific business requirements. This includes layout configurations, finishes, IT infrastructure, and other amenities tailored to enhance functionality and aesthetics.",
   },
   {
-    question: "What materials are used in the construction of Garden Pods?",
+    question:
+      "What materials are used in the construction of Commercial Units?",
     answer:
-      "Our Garden Pods are built with high-quality materials, including solid engineered structural FSC timber and steel frameworks, thermally modified timber cladding, and energy-efficient glazing.",
+      "Commercial Units are constructed using durable and high-quality materials. This typically includes robust steel or timber frameworks, energy-efficient glazing, sustainable cladding options, and materials chosen for longevity and environmental considerations.",
   },
   {
-    question: "How energy-efficient are Garden Pods?",
+    question: "How energy-efficient are Commercial Units?",
     answer:
-      "Garden Pods are designed to be energy-efficient, featuring high levels of insulation, energy-efficient glazing, and options for underfloor heating to ensure a comfortable environment throughout the year.",
+      "Commercial Units are designed with energy efficiency in mind. They feature high levels of insulation, energy-efficient glazing, and options for efficient heating and cooling systems, ensuring comfort and reducing operational costs.",
   },
   {
-    question: "What maintenance is required for a Garden Pod?",
+    question: "What maintenance is required for Commercial Units?",
     answer:
-      "Garden Pods are constructed with low-maintenance materials. The thermally modified timber cladding is durable and requires minimal upkeep, while the high-quality construction ensures longevity.",
+      "Commercial Units are built with low-maintenance materials to minimize upkeep requirements. The exterior cladding and roofing materials are chosen for durability and resistance to weathering, ensuring longevity with minimal maintenance.",
   },
   {
-    question: "Can Garden Pods be used year-round?",
+    question: "Can Commercial Units be used year-round?",
     answer:
-      "Yes, Garden Pods are suitable for use in all seasons. They are designed with excellent insulation and heating options to provide a comfortable space year-round.",
+      "Yes, Commercial Units are designed for year-round use. They are equipped with insulation and climate control systems that maintain comfortable indoor temperatures regardless of external weather conditions.",
+  },
+  {
+    question: "How are Commercial Units installed?",
+    answer:
+      "Commercial Units are prefabricated off-site in a controlled manufacturing environment, which reduces on-site construction time and disruption. Once completed, they are transported and assembled on-site, minimizing site impact and ensuring faster project delivery.",
+  },
+  {
+    question: "What are the benefits of choosing Commercial Units?",
+    answer:
+      "Choosing Commercial Units offers several benefits, including rapid deployment, customizable designs, reduced construction time and site disruption, energy efficiency, and flexibility to expand or relocate as business needs evolve.",
   },
 ];

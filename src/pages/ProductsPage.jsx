@@ -69,19 +69,22 @@ const carouselContent = [
     image: gardenUnit,
     title: "Garden Units",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
-    button: "test",
+    button: "View Products",
+    to: "/products/garden",
   },
   {
     image: livingUnit,
     title: "Living Units",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
-    button: "test",
+    button: "View Products",
+    to: "/products/living",
   },
   {
     image: commericalUnit,
     title: "Commerical Units",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices sollicitudin commodo. Cras luctus lectus nibh, ac porta magna accumsan tristique. ",
-    button: "test",
+    button: "View Products",
+    to: "/products/commerical",
   },
 ];
 
@@ -98,7 +101,7 @@ export const ProductsPage = () => {
         mainTitle={"FIND OUR"}
         subTitle1={"CUBE NEST"}
         subTitle2={"MODULAR"}
-        subTitle3={"GARDEN UNITS"}
+        subTitle3={`${productsType} UNITS`}
       />
 
       <ImageCarousel contentData={carouselContent} />

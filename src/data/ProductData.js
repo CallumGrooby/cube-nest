@@ -25,6 +25,26 @@ import fejjiLivingImage2 from "../assets/Fjell Living/Image2.jpg";
 import fejjiLivingImage3 from "../assets/Fjell Living/Image3.jpg";
 import fejjiLivingImage4 from "../assets/Fjell Living/Image4.jpg";
 
+import classroomPodImage1 from "../assets/ClassRoom/image1.jpg";
+import classroomPodImage2 from "../assets/ClassRoom/image2.webp";
+import classroomPodImage3 from "../assets/ClassRoom/image3.webp";
+import classroomPodImage4 from "../assets/ClassRoom/image4.webp";
+
+import meetingRoomPodImage1 from "../assets/MeetingRoom/image1.jpg";
+import meetingRoomPodImage2 from "../assets/MeetingRoom/image2.jpg";
+import meetingRoomPodImage3 from "../assets/MeetingRoom/image3.jpg";
+import meetingRoomPodImage4 from "../assets/MeetingRoom/image4.jpg";
+
+import leisurePodImage1 from "../assets/Hotel/image1.jpg";
+import leisurePodImage2 from "../assets/Hotel/image2.jpg";
+import leisurePodImage3 from "../assets/Hotel/image3.jpg";
+import leisurePodImage4 from "../assets/Hotel/image4.jpg";
+
+import visitorCenterPodImage1 from "../assets/Visitor/image1.jpg";
+import visitorCenterPodImage2 from "../assets/Visitor/image2.jpg";
+import visitorCenterPodImage3 from "../assets/Visitor/image3.jpg";
+import visitorCenterPodImage4 from "../assets/Visitor/image4.jpg";
+
 const ProductTypes = {
   GARDEN: "garden",
   LIVING: "living",
@@ -287,6 +307,158 @@ export const ProductData = [
     ],
     price: "29,775.00",
     id: 6,
+    to: null,
+  },
+
+  {
+    type: ProductTypes.COMMERCIAL,
+    name: "School & Classroom Pods",
+    shortDescription:
+      "Create bright and inspiring learning spaces with our architecturally designed modular classrooms. Incorporating natural light, ventilation, and flexible spaces, our pods are designed for a stimulating educational environment.",
+    image: classroomPodImage1,
+    summary: [
+      "Learners thrive in environments that stimulate their minds and provide comfort. Our School & Classroom Pods are designed with natural light and ventilation in mind, ensuring flexible spaces that can be tailored to your needs. The design emphasizes connections between indoors and outdoors through full-height glazed doors.",
+      "Each classroom is environmentally considerate at every stage of design and construction. Our glazing maximizes solar gains while incorporating shading to harmonize with nature. The latest technologies in mechanical ventilation and heat recovery ensure a healthy and comfortable space, exceeding UK Government regulations.",
+      "Natural materials are used for exterior cladding, making the building kind to the environment and the school's landscape. Modular construction allows for off-site building, reducing on-site noise and disruption, and ensuring quality control with reliable timelines.",
+      "Our designs, in collaboration with your resources, provide the best educational experience for staff and students. We cater to classrooms, nurseries, and colleges, ensuring optimal learning environments.",
+    ],
+    features: [
+      "Architecturally designed with natural light and ventilation.",
+      "Flexible, accessible spaces with full-height glazed doors.",
+      "Environmentally considerate design and construction.",
+      "Glazing for optimal solar gain and shading.",
+      "Advanced mechanical ventilation and heat recovery systems.",
+      "Natural materials for exterior cladding.",
+      "Modular construction for reduced on-site disruption.",
+      "Child-friendly washroom facilities and IT infrastructure.",
+      "Turnkey solutions including secure fencing and access paths.",
+    ],
+    sizes: [
+      "Custom sizes to meet specific educational needs.",
+      "Modular configurations for flexible classroom setups.",
+    ],
+    button: "Talk to Us",
+    productImages: [
+      classroomPodImage1,
+      classroomPodImage2,
+      classroomPodImage3,
+      classroomPodImage4,
+    ],
+    price: "Price on request",
+    id: 7,
+    to: null,
+  },
+  {
+    type: ProductTypes.COMMERCIAL,
+    name: "Meeting Room Pods",
+    shortDescription:
+      "Modular commercial buildings and pods that work for you. Bespoke spaces designed to reflect your brand and business, ensuring an impressive and functional meeting environment.",
+    image: meetingRoomPodImage1,
+    summary: [
+      "The space where you meet and greet your clients is a reflection of your brand and your business. We create spaces that are bespoke to you and built to last. An area where you’ll be proud to host your meetings and represent your business in the best possible way. We pay attention to all of the details that are important to you such as data location for IT systems and critical positions for your lighting.",
+      "If your business has a Sustainable Procurement policy, our specifications will meet your environmental responsibilities. Our buildings typically feature natural cladding materials and efficient methods of heating and cooling. We design with efficiency in mind, considering the orientation of glazing and incorporating canopy or screen details for solar shading.",
+      "We can tailor the design of your building to the needs of your business. If you’re looking for small private areas where your colleagues can collaborate on projects, we can install multiple spaces. If it’s a large conference room or multiple rooms in a larger area, we can design a building to suit. Whether your project involves a large-scale expansion of your team or a small addition to your existing infrastructure, we offer the same level of attention to detail and a building tailored to your exact requirements.",
+      "A wide range of businesses have specified our meeting pods, including sales offices, dental offices, marketing suites, and meeting rooms, all prefabricated in our specialist manufacturing unit with precision engineering in mind.",
+    ],
+    features: [
+      "Bespoke design tailored to your brand and business needs.",
+      "Natural cladding materials and efficient heating and cooling systems.",
+      "Flexible and private collaboration spaces.",
+      "Large conference rooms or multiple rooms in larger areas.",
+      "Attention to data location for IT systems and critical lighting positions.",
+      "Design efficiency with orientation of glazing and solar shading.",
+      "Precision-engineered prefabrication.",
+      "Environmentally considerate design and construction.",
+    ],
+    sizes: [
+      "Custom sizes to meet specific business needs.",
+      "Modular configurations for flexible meeting room setups.",
+    ],
+    button: "Talk to Us",
+    productImages: [
+      meetingRoomPodImage1,
+      meetingRoomPodImage2,
+      meetingRoomPodImage3,
+      meetingRoomPodImage4,
+    ],
+    price: "Price on request",
+    id: 8,
+    to: null,
+  },
+  {
+    type: ProductTypes.COMMERCIAL,
+    name: "Hotel & Leisure Pods",
+    shortDescription:
+      "Pod Space combines the benefits of modular construction with architectural design, style, and luxury interiors. Minimal disruption with maximum impact.",
+    image: leisurePodImage1,
+    summary: [
+      "Our clients in the leisure industry demand the highest standards of finish, making Pod Space the natural choice for attention to the finer details. Your hotel, spa, or leisure complex is a sanctuary to your guests, so you can’t afford the noise, mess, and disruption of traditional construction on your site. We combine the speed and convenience of modular off-site construction with the expertise of our in-house design team, ensuring the end result is a design that aligns with your style and brand without the hassle of shutdowns or reduced occupancy.",
+      "Depending on the needs of your site and space, we can offer a range of solutions from a shell scheme to a fully finished turnkey building. We can work with your own interior designers to ensure everything is in place to complete your building, from specialist M&E to the fit-out of spa equipment. Our design team are also experts in sustainable design, with natural materials at the heart of each of our buildings. Pod Space is the perfect modular hotel facility manufacturer.",
+      "On the exterior, the new addition to your landscape and gardens will complement its surroundings with sustainable timber cladding and color-matched details throughout. We also design in efficiency to ensure your future running costs are kept in check with high levels of insulation and energy-efficient modes of heating and cooling. We have the best interests of you and your customers in mind.",
+      "Whether it’s a small space to provide gym facilities or a fully functional dining room or spa complex, we have an expert team of designers, installers, and consultants to put everything in place for a successful project.",
+    ],
+    features: [
+      "Bespoke design tailored to your hotel or leisure complex needs.",
+      "Sustainable timber cladding and color-matched details.",
+      "High levels of insulation and energy-efficient heating and cooling systems.",
+      "Flexible solutions from shell schemes to fully finished turnkey buildings.",
+      "Collaboration with your interior designers for complete fit-out.",
+      "Specialist M&E and spa equipment fit-out.",
+      "Natural materials and sustainable design.",
+      "Minimized on-site noise and disruption.",
+      "Customizable with optional features like M&E specifications, roof canopies, and exterior sliding screens.",
+    ],
+    sizes: [
+      "Custom sizes to meet specific leisure and hospitality needs.",
+      "Modular configurations for flexible space setups.",
+    ],
+    button: "Talk to Us",
+    productImages: [
+      leisurePodImage1,
+      leisurePodImage2,
+      leisurePodImage3,
+      leisurePodImage4,
+    ],
+    price: "Price on request",
+    id: 9,
+    to: null,
+  },
+  {
+    type: ProductTypes.COMMERCIAL,
+    name: "Visitor Centre Pods",
+    shortDescription:
+      "Create a warm and welcoming reception for your visitors with our architecturally designed visitor centre pods. Tailored to showcase your site’s beauty and heritage, our eco-friendly cabins offer a lasting impression.",
+    image: visitorCenterPodImage1,
+    summary: [
+      "First impressions count, especially at the start of your visitor journey. Our Visitor Centre Pods are meticulously planned to ensure your clients get the best experience. We collaborate closely with our clients to incorporate design details that showcase the site and its surroundings.",
+      "Whether it's framing the landscape with strategically positioned glazing to invite exploration or complementing existing buildings, our pods are versatile. We also provide facilities and infrastructure to engage and educate visitors, ensuring they linger longer.",
+      "Built to last, our eco cabins feature robust materials and high levels of insulation. Multi-layered timber and steel structures are wrapped in natural and sustainable cladding, including options for a living sedum roof to enhance local biodiversity.",
+      "Intelligent design informs energy efficiency through window and door placement, and options for solar shading with screens or canopies. Our eco-friendly specification not only benefits the environment but also reduces long-term running costs.",
+      "Modular construction offers cost certainty and efficiency, eliminating the unpredictability of traditional builds. A Pod Space building is an investment for the future, enhancing both visitor experience and environmental sustainability.",
+    ],
+    features: [
+      "Architecturally designed to create a warm and inviting reception.",
+      "Customizable glazing options to frame surrounding landscapes.",
+      "Facilities and infrastructure for engaging visitor experiences.",
+      "Robust and eco-friendly construction with high insulation levels.",
+      "Natural and sustainable cladding materials, including living sedum roofs.",
+      "Energy-efficient design with optimal window and door placement.",
+      "Modular construction for cost certainty and reduced on-site disruption.",
+      "Options for bespoke signage, lighting packages, and IT integration.",
+    ],
+    sizes: [
+      "Custom sizes tailored to fit your site and visitor needs.",
+      "Flexible configurations to accommodate various functions.",
+    ],
+    button: "Talk to Us",
+    productImages: [
+      visitorCenterPodImage1,
+      visitorCenterPodImage2,
+      visitorCenterPodImage3,
+      visitorCenterPodImage4,
+    ],
+    price: "Price on request",
+    id: 10,
     to: null,
   },
 ];

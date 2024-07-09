@@ -65,7 +65,7 @@ export const ImageCarousel = ({ contentData }) => {
                   </p>
 
                   {item.button != null && (
-                    <Button variant={"default"} size={"lg"}>
+                    <Button variant={"default"} size={"lg"} href={item.to}>
                       {item.button}
                     </Button>
                   )}

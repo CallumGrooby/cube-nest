@@ -6,10 +6,11 @@ import image from "../assets/placeholder.webp";
 import { ImageGrid } from "../components/ImageGrid";
 import { FAQSection } from "../components/products/FAQSection";
 import {
-  CommericalPodQuestions,
+  CommercialPodQuestions,
   GardenPodQuestions,
   LivingPodQuestions,
 } from "../data/ProductQuestions";
+import Button from "../components/Button";
 
 export const ProductPage = () => {
   const { productId } = useParams();
@@ -26,7 +27,7 @@ export const ProductPage = () => {
     if (result.type == "living") {
       tempTitle = "Discover the possibilities with our versatile Living Pods.";
     }
-    if (result.type == "commerical") {
+    if (result.type == "commercial") {
       tempTitle = "Commerial Pods";
     }
 
@@ -43,8 +44,8 @@ export const ProductPage = () => {
     if (result.type == "living") {
       tempQuestions = LivingPodQuestions;
     }
-    if (result.type == "commerical") {
-      tempQuestions = CommericalPodQuestions;
+    if (result.type == "commercial") {
+      tempQuestions = CommercialPodQuestions;
     }
     return tempQuestions;
   };
@@ -66,7 +67,7 @@ export const ProductPage = () => {
           image4={result.productImages[3]}
         />
 
-        <FAQSection title={FAQTitle()} />
+        <FAQSection title={FAQTitle()} questions={FaqQuestions()} />
       </section>
     </>
   );
@@ -101,7 +102,7 @@ const ProductInfo = ({ product }) => {
           </div>
         </div>
 
-        <button>Make A Enquiry</button>
+        <Button>Make A Enquiry</Button>
       </article>
 
       <article className="basis-1/2 p-4 text-justify">

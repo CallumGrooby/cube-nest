@@ -5,9 +5,9 @@ export const HeroSection = ({ mainTitle, subTitle1, subTitle2, subTitle3 }) => {
     <section className="relative bg-background">
       <div className="relative mx-auto flex flex-col justify-center max-w-[700px] gap-2 font-bold text-6xl uppercase items-center min-h-[600px]">
         <h1 className="text-primary">{mainTitle}</h1>
-        <div className="inline-flex gap-4">
+        <div className="inline-flex gap-4 flex-col md:flex-row">
           <h1 className="text-primary">{subTitle1}</h1>
-          <h1 className="mt-16 text-secondary">{subTitle2}</h1>
+          <h1 className="md:mt-16 text-secondary">{subTitle2}</h1>
         </div>
         <h1 className="text-secondary">{subTitle3}</h1>
       </div>

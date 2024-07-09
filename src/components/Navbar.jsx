@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, Outlet, ScrollRestoration } from "react-router-dom";
 import Logo from "../assets/Logo.svg";
 import Button from "./Button";
+import { Footer } from "./Footer";
 
 const Links = [
   {
@@ -33,6 +34,8 @@ export const Navbar = () => {
       <SmallScreenNavBar />
 
       <Outlet />
+
+      <Footer />
     </>
   );
 };
