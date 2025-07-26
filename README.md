@@ -17,13 +17,13 @@ A landing page for modular living units, featuring Google Maps API integration a
 
 ## 🌐 Live Demo
 
-View the live site →
+View the live site → https://cubenest.callumgrooby.co.uk/
 
 ---
 
 ## 📸 Screenshot
 
-
+![Screenshot](./assets/screenshot.png)
 
 ---
 
