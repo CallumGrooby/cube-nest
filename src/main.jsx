@@ -12,6 +12,8 @@ import { ContactPage } from "./pages/ContactPage.jsx";
 
 import ErrorPage from "./ErrorPage.jsx";
 import { Navbar } from "./components/Navbar.jsx";
+import { ProductPage } from "./pages/ProductPage.jsx";
+import NewsArticlePage from "./pages/NewsArticlePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,8 +35,16 @@ const router = createBrowserRouter([
         element: <NewsPage />,
       },
       {
-        path: "/products/:contactId",
+        path: "/news/article/:id",
+        element: <NewsArticlePage />,
+      },
+      {
+        path: "/products/:productsType",
         element: <ProductsPage />,
+      },
+      {
+        path: "/product/:productId",
+        element: <ProductPage />,
       },
       {
         path: "/contact",

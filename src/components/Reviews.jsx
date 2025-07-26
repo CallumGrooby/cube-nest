@@ -5,33 +5,13 @@ import { Pageination } from "../ultilies/Pageination";
 export const Reviews = () => {
   return (
     <section className="container mx-auto">
-      {/* <div className="flex flex-row gap-4">
-        {ReviewsData.map((review, index) => {
-          return (
-            <div key={index} className="text-primary ">
-              <h1 className="capitalize font-bold text-3xl">
-                &quot;{review.title}&quot;
-              </h1>
-              <p>{review.text}</p>
-              <div className="flex flex-col items-end">
-                <h1 className="text-xl">{review.user}</h1>
-                <div className="flex gap-2">
-                  <h1 className="text-base">{review.date}</h1>
-                  <ReviewStars numberOfStars={5}></ReviewStars>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div> */}
-
       <Pageination
         className={""}
         variant={"default"}
         objects={ReviewsData}
         renderItem={(review) => (
-          <div className="text-primary ">
-            <h1 className="capitalize font-bold text-3xl">
+          <div className="text-primary font-mavenPro">
+            <h1 className="capitalize font-bold text-2xl">
               &quot;{review.title}&quot;
             </h1>
             <p>{review.text}</p>

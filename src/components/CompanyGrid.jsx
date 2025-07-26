@@ -53,7 +53,7 @@ const CompanyLogos = [
 
 export const CompanyGrid = () => {
   return (
-    <section className="max-w-[1920px] mx-auto my-16">
+    <section className="max-w-[1920px] mx-auto  my-16">
       <header>
         <h1 className="text-5xl text-center text-primary mb-4">
           Leading companies choose
@@ -63,7 +63,7 @@ export const CompanyGrid = () => {
         </h1>
       </header>
 
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
         {CompanyLogos.map((logo, index) => {
           return <img key={index} src={logo.image} alt={logo.alt} />;
         })}

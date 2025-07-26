@@ -5,3 +5,30 @@
 :root {
   background-color: #f4f3ec;
 }
+
+.hover-underline-animation {
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -8px;
+  left: 0;
+  background-color: #fc414e;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.selected-underline:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
